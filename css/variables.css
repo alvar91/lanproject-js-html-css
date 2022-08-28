@@ -1,0 +1,12 @@
+:root {
+  /* Colors */
+  --light: #fff;
+  --dark: black;
+  --startGradient: #185757;
+  --startGradientAlpha: rgba(24, 87, 87, 0.85);
+  --endGradient: #45215b;
+  --endGradientAlpha: rgba(69, 33, 91, 0.85);
+  --gray: gray;
+  --disabled: gray;
+  --background: rgba(255, 255, 255, 0.85);
+}
