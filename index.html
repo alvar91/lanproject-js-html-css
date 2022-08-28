@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section id="form" class="form registration-mode">
+    <section id="form" class="form">
        <h1 class="visually-hidden">Тестовое задание Lan Project</h1>
       <div class="form__background">
         
-        <div class="form__content js-modes-buttons">
+        <div class="form__content js-modes-buttons js-fake-password-container">
             <div class="form__buttons">
                 <button class="form__button" type="button" data-mode="login"><span class="form__arrow">←</span>Вход</button>
                 <button class="form__button form__button--registration" type="button" data-mode="registration">Регистрация<span class="form__arrow-registration">→</span></button>
@@ -27,6 +27,7 @@
                 </li>
                 <li class="form__group">
                   <input class="form__input" type="password" name="password" required placeholder=" " autocomplete="off" />
+                  <span class="form__fake-password js-fake-input"></span>
                   <svg class="form__icon"><use xlink:href="images/icon-password.svg#password"></use></svg>
                   <label class="form__label">Пароль</label>
                   <a class="form__link mb100" href="#">Забыли пароль?</a>
@@ -51,11 +52,13 @@
               </li>
               <li class="form__group form__group--registration">
                 <input class="form__input form__input--registration" type="password" name="password-first" required placeholder=" " autocomplete="off" />
+                <span class="form__fake-password js-fake-input"></span>
                 <svg class="form__icon form__icon--registration"><use xlink:href="images/icon-password.svg#password"></use></svg>
                 <label class="form__label form__label--registration">Пароль</label>
               </li>
               <li class="form__group form__group--registration">
                 <input class="form__input form__input--registration" type="password" name="password-second" required placeholder=" " autocomplete="off" />
+                <span class="form__fake-password js-fake-input"></span>
                 <svg class="form__icon form__icon--registration"><use xlink:href="images/icon-password.svg#password"></use></svg>
                 <label class="form__label form__label--registration">Повторите пароль</label>
               </li>
@@ -70,6 +73,6 @@
         <div class="form__background-registration"></div>
       </div>
     </section>
-    <script src="scripts.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
   </body>
 </html>

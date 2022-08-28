@@ -29,7 +29,7 @@
 }
 
 .registration-mode .form__background-registration {
-  clip-path: polygon(152px 0px, 40% -3px, 100% 0px, 100% 100%, -408px 100%);
+  clip-path: polygon(152px 0px, 40% -3px, 101% 0px, 101% 100%, -408px 100%);
   transition: clip-path 0.3s ease-in-out;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .form__input[type="password"] {
-  -webkit-text-security: disc !important;
+  color: transparent;
 }
 
 .form__input:focus ~ .form__label {
@@ -333,5 +333,17 @@
 }
 
 .registration-mode .form__problem {
+  color: var(--light);
+}
+
+.form__fake-password {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  color: var(--dark);
+  font-size: 22px;
+}
+
+.registration-mode .form__fake-password {
   color: var(--light);
 }
